@@ -10,8 +10,8 @@ function SongList(props){
             <Card.Description>{song.album}</Card.Description>
           </Card.Content>
           <Card.Content extra>
-            <Button>DeleteSong</Button>
-            <Button>Edit Song</Button>
+            <Button onClick={() => props.deleteSong(song.id)}>DeleteSong</Button>
+            <Button >Edit Song</Button>
           </Card.Content>
         </Card>
         )
